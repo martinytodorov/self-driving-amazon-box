@@ -1,0 +1,21 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(
+    /* description */ ('A STEP file example'),
+    /* implementation_level */ '2;1');
+FILE_NAME(
+    /* name */ 'example.stp',
+    /* time_stamp */ '2023-04-15T12:00:00',
+    /* author */ ('Author Name'),
+    /* organization */ ('Organization'),
+    /* preprocessor_version */ 'Preprocessor Version',
+    /* originating_system */ 'Originating System',
+    /* authorization */ 'Authorization');
+FILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 -1 1 5 1 }'));
+ENDSEC;
+
+DATA;
+#10=CARTESIAN_POINT('', (10.0, 20.0, 30.0));
+#20=VERTEX_POINT('', #10);
+ENDSEC;
+END-ISO-10303-21;
